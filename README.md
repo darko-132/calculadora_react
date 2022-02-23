@@ -72,4 +72,4 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 =======
 # calculadora_react
 Calculadora de temas basicos de ingenieria hecha con react
->>>>>>> 1ebea215ca139ad9e9597cbc9b127ed0d28806e3
+
