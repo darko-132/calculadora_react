@@ -3,8 +3,8 @@ import Elect_calc from "../elect_calc";
 
 class Ampere extends Component{
 	state = {
-    voltio:"",
-	resistencia:"",
+    voltio:"0",
+	resistencia:"0",
 	plan: ' '
 	}
     back = ()=>{
@@ -36,12 +36,12 @@ class Ampere extends Component{
 					<button type="button" className="btn btn-success back" onClick = {this.back}>↩</button>
 				</div>
 				<h3>Calcular Amperaje</h3>
-				<div class="row g-3">
+				<div className="row g-3">
 					{/* onChange escucha los cambios en los inputs */}
 					<span>Voltio (V)</span>
-					<div class="col">
+					<div className="col">
 						<input type="number"
-						class="form-control" 
+						className="form-control" 
 						placeholder="Voltio" 
 						aria-label="Voltio"
 						onChange={this.datos}
@@ -49,9 +49,9 @@ class Ampere extends Component{
 						name="voltio"/>
 					</div>
 					<span>Resistencia (R)</span>
-					<div class="col">
+					<div className="col">
 						<input type="text"
-						class="form-control"
+						className="form-control"
 						placeholder="Resistencia"
 						aria-label="Resistencia"
 						onChange={this.datos}

@@ -38,12 +38,12 @@ class Carga extends Component{
 					<button type="button" className="btn btn-success back" onClick = {this.back}>↩</button>
 				</div>
 				<h3>Calcular la capacidad en amperios-hora</h3>
-				<div class="row g-3">
+				<div className="row g-3">
 					{/* onChange escucha los cambios en los inputs */}
 					<span>Amperios que necesita la aplicación</span>
-					<div class="col">
+					<div className="col">
 						<input type="number"
-						class="form-control" 
+						className="form-control" 
 						placeholder="Amperios" 
 						aria-label="Amperios"
 						onChange={this.datos}
@@ -51,9 +51,9 @@ class Carga extends Component{
 						name="amperios"/>
 					</div>
 					<span>Tiempo en horas que queremos que funcione.</span>
-					<div class="col">
+					<div className="col">
 						<input type="text"
-						class="form-control"
+						className="form-control"
 						placeholder="Tiempo"
 						aria-label="Last name"
 						onChange={this.datos}

@@ -36,12 +36,12 @@ class Volt extends Component{
 					<button type="button" className="btn btn-success back" onClick = {this.back}>↩</button>
 				</div>
 				<h3>Calcular voltaje</h3>
-				<div class="row g-3">
+				<div className="row g-3">
 					{/* onChange escucha los cambios en los inputs */}
 					<span>Corriente (I) </span>
-					<div class="col">
+					<div className="col">
 						<input type="number"
-						class="form-control" 
+						className="form-control" 
 						placeholder="Amperios" 
 						aria-label="Amperios"
 						onChange={this.datos}
@@ -49,9 +49,9 @@ class Volt extends Component{
 						name="amperios"/>
 					</div>
 					<span>Resistencia (R)</span>
-					<div class="col">
+					<div className="col">
 						<input type="text"
-						class="form-control"
+						className="form-control"
 						placeholder="Resistencia"
 						aria-label="Resistencia"
 						onChange={this.datos}

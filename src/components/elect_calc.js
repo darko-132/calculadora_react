@@ -7,7 +7,7 @@ import Resist from "./calc/resist";
 
 class Elect_calc extends Component{
     state={
-        plan: 'mecha'    
+        plan: ' '    
     }
     back = ()=>{
         this.setState({plan: 'back'})
