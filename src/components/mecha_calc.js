@@ -1,6 +1,7 @@
 import React, {Component} from "react";
 import Select from "./select";
-import RPM from "./calc/rpm";
+import Engranes from "./calc/engranes";
+import Potencia from "./calc/potencia";
 
 class Mecha_calcu extends Component{
     state={
@@ -9,8 +10,11 @@ class Mecha_calcu extends Component{
     back = ()=>{
         this.setState({plan: 'back'})
       }
-    rpm = ()=>{
-        this.setState({plan:'rpm'})
+    engranes = ()=>{
+        this.setState({plan:'engranes'})
+    }
+    potencia = ()=>{
+        this.setState({plan:'potencia'})
     }
     render(){
         {
@@ -26,17 +30,22 @@ class Mecha_calcu extends Component{
                             <button type="button" className="btn btn-success back" onClick = {this.back}>↩</button>
                         </div>
                         <div className="select">
-                            <button type="button" className="btn btn-primary" onClick={this.rpm}>RPM</button>
-                            <button type="button" className="btn btn-primary">Potencia</button>
+                            <button type="button" className="btn btn-primary" onClick={this.engranes}>Engranes</button>
+                            <button type="button" className="btn btn-primary" onClick={this.potencia}>Potencia</button>
                             <button type="button" className="btn btn-primary">Peso</button>
                         </div>
                         
                     </div>
                     )
             }
-            else if(this.state.plan === 'rpm'){
+            else if(this.state.plan === 'engranes'){
             return(
-                <RPM/>
+                <Engranes/>
+            )
+            }
+            else if(this.state.plan === 'potencia'){
+            return(
+                <Potencia/>
             )
             }
         
