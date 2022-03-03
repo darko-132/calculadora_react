@@ -1,3 +1,11 @@
+.logo{
+	text-align: center;
+	margin-top: 8%;
+}
+.logo img{
+	width: 100px;
+	margin: auto 0;
+}
 .btn button{
 	color: #fff;
 	padding: 1%;
@@ -8,11 +16,34 @@
 	font-size: 1.3rem;
 	font-weight: bold;
 }
+.presentacion h1{
+text-align: center;
+margin: 2% 0;
+}
+.presentacion p{
+text-align: center;
+}
 .selectG{
-	margin-top: 5%;
+margin-top: 5%;
+text-align: center;
 }
 .selectG button{
-	margin: auto; 
+	margin: 0 10px;
+	width: 10rem;
+}
+.selectM{
+	margin-top: 5%;
+	text-align: center;	
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-gap: 10px;
+}
+.selectE{
+	margin-top: 5%;
+	text-align: center;	
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	grid-gap: 10px;
 }
 .btn_e{
 	background: #E8DB4F;
@@ -31,7 +62,30 @@
 .mb h4{
 	margin-bottom: 0;
 }
-/* .btn{
-	margin-top: 20%;
-	text-align: center;
-} */
+@media (max-width: 700px) {
+	.selectM{
+		margin-top: 5%;
+		text-align: center;	
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		grid-gap: 10px;
+	}
+	.selectM img{
+		width: 150px;
+		margin:10px auto;
+	}
+	.selectE{
+		margin-top: 5%;
+		text-align: center;	
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		grid-gap: 10px;
+	}
+	.selectE img{
+		width: 150px;
+		margin:10px auto;
+	}
+	.selectG button{
+		margin-bottom: 10px;
+	}
+}

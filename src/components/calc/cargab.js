@@ -61,9 +61,9 @@ class Carga extends Component{
 						name= "tiempo"/>
 					</div>
 				</div>
-				<form onSubmit={this.enviar} className="row g-2">
-					<input type="submit"/>
-				</form>
+				<div>
+					<button type="button" className="btn btn-success back" onClick={this.enviar}>✔</button>
+				</div>
 				<div >
 					<h3 id="cargaBat">0 Ah</h3>
 				</div>

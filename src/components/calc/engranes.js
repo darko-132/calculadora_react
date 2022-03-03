@@ -66,7 +66,7 @@ class Engranes extends Component{
 					<div>
 						<button type="button" className="btn btn-success back" onClick={this.enviar}>✔</button>
 					</div>
-					<div>
+					<div className="engranaje">
 						<div>
 							<p>Altura del diente(h<sub>1</sub>) = Modulo (M)</p>
 							<h5>h<sub>1</sub> = <span id="h1"></span></h5>
